@@ -17,10 +17,11 @@
     "url": "https://github.com/foxliza26/JDuir/issues"
   },
   "homepage": "https://github.com/foxliza26/JDuir#readme",
-  
   "dependencies": {
     "lowdb": "^1.0.0",
+    "nanoid": "^3.3.1",
     "socket.io": "^3.1.0",
+    "socket.io-client": "^4.4.1",
     "supervisor": "^0.12.0"
   }
 }

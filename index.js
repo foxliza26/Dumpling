@@ -10,8 +10,19 @@ const io = require('socket.io')(server,{
 })
 
 const log=console.log
+const registeruserHandllers = require('./handlers/userHandlers')
+const registermessageHandllers = require('./handlers/messageHandlers')
+
 // получаем обработчика событий
 const onConnection = (socket) => {
+    // выводим сообщение о подключении пользователя
+    log(`User connected`)
+
+
+
+    socket.on(`disconnect`, () => {
+        log (`User disconnected`)
+    })
 
 }
 // обрабатываем подключение
