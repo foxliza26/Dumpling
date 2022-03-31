@@ -30,14 +30,14 @@ db.defaults({
 
 module.exports = (io,socket) =>{
     const getMessages=() =>{
-        const masseges = b.get('messages').value()
-        io.emit('messanges', messanges)
+        const masseges = db.get('messages').value()
+        io.emit('messages', messages)
     }
         const addMessages=(message) =>{
             db.get('messages')
             .push({
                 messageId:nanoid(8),
-creaded:new Data(),
+                creaded:new Data(),
 ...message
             })
 .write()
