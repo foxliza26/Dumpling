@@ -16,13 +16,13 @@ const registermessageHandlers = require('./handlers/messageHandlers')
 // получаем обработчика событий
 const onConnection = (socket) => {
     // выводим сообщение о подключении пользователя
-    log(`User connected`)
+    log('User connected')
 
     registeruserHandlers(io,socket)
     registeruserHandlers(io,socket)
 
-    socket.on(`disconnect`, () => {
-        log (`User disconnected`)
+    socket.on('disconnect', () => {
+        log ('User disconnected')
     })
 
 }
